@@ -1,0 +1,26 @@
+{
+  "name": "datingapppt",
+  "version": "1.0.0",
+  "description": "Dating app voor project tech",
+  "main": "server.js",
+  "scripts": {
+    "test": "datingApp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Awana1/dating-app-pt.git"
+  },
+  "author": "Azam Awan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Awana1/dating-app-pt/issues"
+  },
+  "homepage": "https://github.com/Awana1/dating-app-pt#readme",
+  "dependencies": {
+    "boilerplate": "^0.6.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
+  }
+}

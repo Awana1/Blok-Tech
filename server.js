@@ -20,14 +20,24 @@ app.get('/', function(req, res) {
     res.render('pages/index');
 });
 
-// login page
-app.get('/login', function(req, res){
-  res.render('pages/index');res.render('pages/login');
+// index page
+app.get('/index', function(req, res) {
+  res.render('pages/index');
 });
 
-// about page
-app.get('/about', function(req, res) {
-    res.render('pages/about');
+// login page
+app.get('/login', function(req, res){
+  res.render('pages/login');
+});
+
+// over page
+app.get('/over', function(req, res) {
+    res.render('pages/over');
+});
+
+// diensten page
+app.get('/diensten', function(req, res) {
+  res.render('pages/diensten');
 });
 
 // contact page

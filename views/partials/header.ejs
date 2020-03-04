@@ -1,23 +1,35 @@
 <!-- views/partials/header.ejs -->
 
-<nav class="navbar navbar-default" role="navigation">
-<div class="container-fluid">
+<!--
+<nav>
+    <a href="/index">
+       <!-- <img src="../img/logo.png" alt="logo Lovr">-->
+       <!--
+    </a>
 
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-
-            <img src="../img/logo.png" alt="Logo Lovr" id="logo">
-
-        </a>
-
-        <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-
-            <li><a href="/login">login</a></li>
-        </ul>
-    </div>
-
-</div>
+    <ul>
+        <li><a href='/index'> Home </a></li>
+        <li><a href='/about'> About </a></li>
+        <li><a href='/Contact'> Contact </a></li>
+        <li><a href='/Login'> Login </a></li>
+    </ul>
 </nav>
+-->
+
+<nav>
+    <input type="checkbox" id="check">
+
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <img id="logoHeader" src="../img/logo_header.png">
+
+    <ul>
+      <li><button>Log in</button></li>
+      <li><a class="active" href="/index">Home</a></li>
+      <li><a href="/over">Over</a></li>
+      <li><a href="/diensten">Diensten</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>

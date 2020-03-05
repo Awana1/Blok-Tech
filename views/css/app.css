@@ -12,29 +12,37 @@ Table of context
 *****Base Code *****
 ********************/
 
-*{
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
-a{ 
+a {
 	text-decoration: none;
 	color: #d61e3a;
 }
 
 body {
-	
-	
-
 	font-size: 1em;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 }
 
-img{
+section {
+	min-height: 75vh;
+	padding: 75px 0px 75px 0px;
+	margin: 0vw 15vw 0vw 15vw;
+	border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+img {
 	max-width: 100%;
 	height: auto;
+}
+
+h2{
+	font-size: 3em;
 }
 
 
@@ -42,139 +50,71 @@ img{
 **** Navigation ****
 ********************/
 
-/* Mobile menu 
-nav ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
- }
-
-
-
- nav ul li {
+nav {
 	width: 100%;
-	text-align: center;
-	order: 3;
-	display: none;
- }
-
-
-
-/* Desktop Menu 
-nav{
-	background-color: red;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	padding: 0px 30px 0px 30px;
-}
-
-nav img {
-	vertical-align: middle;
-	width: 100px; 
-	height: 100px;
-}
-
-nav ul{
-	display: flex;
-	justify-content: space-between;
-
-}
-
-nav li{
-	list-style: none;
-	
-}
-
-nav li a{
-	display: inline-block;
-	text-decoration: none;
-	padding: 10 15px;
-
-	font-size: 1.4em;
-	color: #fff;
-
-}
-
-nav li a:hover{
-	color:#000;
-}
-*/
-
-nav{
+	position: fixed;
 	background: transparent;
+
 	-webkit-transition: background-color 0.5s ease-out;
 	-moz-transition: background-color 0.5s ease-out;
 	-o-transition: background-color 0.5s ease-out;
 	transition: background-color 0.5s ease-out;
-
-
-	height: 100px;
-	width: 100%;
-	line-height: 100px;
-	position: fixed;
-
-
-	
-   }
-
-   nav img {
-	
-	display: inline-block;
-	
-	width: 200px;
-	padding-left: 30px;
 }
 
+nav img {
+	display: inline-block;
+	width: 200px;
+	padding-left: 50px;
+}
 
-
-   nav ul{
+nav ul {
 	float: right;
 	margin-right: 20px;
-   }
-   nav ul li{
+}
+
+nav ul li {
 	display: inline-block;
 	line-height: 80px;
 	margin: 0 5px;
-   }
-   nav ul li a{
+}
+
+nav ul li a {
 	color: white;
+	font-weight: bold;
 	font-size: 17px;
 	padding: 7px 13px;
 	border-radius: 3px;
-	text-transform: uppercase;
-   }
-   nav ul li a:hover{
-	background: #d61e3a;
-	transition: .5s;
-   }
+}
 
+nav ul li a:hover {
+	color: #d61e3a;
+	background-color: #fff;
+	transition: .3s;
+}
 
-
-   nav ul li button{
-	
+nav ul li button {
 	font-size: 1em;
 	text-transform: uppercase;
-	padding: 15px 60px 15px 60px;
+
+	padding: 15px 30px 15px 30px;
+	margin-right: 50px;
 	border-style: none;
 	border-radius: 8px;
 
 	color: #d61e3a;
+}
 
-   }
-
-   nav ul li button:hover
-   {
-
+nav ul li button:hover {
 	color: #fff;
-	background-color: #FF3CAC;
-background-image: linear-gradient(345deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+	background: #d53369;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #cbad6d, #d53369);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #cbad6d, #d53369);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-   }
-
-   .checkbtn{
+.checkbtn {
 	font-size: 30px;
 	color: white;
 	float: right;
@@ -182,68 +122,140 @@ background-image: linear-gradient(345deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)
 	margin-right: 40px;
 	cursor: pointer;
 	display: none;
-   }
-   #check{
+}
+
+#check {
 	display: none;
-   }
-   @media (max-width: 952px){
-
-	nav{background-color: #d61e3a;}
-
-	nav ul li a{
-	  font-size: 16px;
-	}
-   }
-   @media (max-width: 858px){
-	.checkbtn{
-	  display: block;
-	}
-	nav ul{
-	  position: fixed;
-	  z-index: 1;
-	  width: 100%;
-	  height: 100%;
-	  background: #8e182a;
-	  top: 80px;
-	  left: -100%;
-	  text-align: center;
-	  transition: all .3s;
-	}
-	nav ul li{
-	  display: block;
-	  margin: 50px 0;
-	  line-height: 30px;
-	}
-	nav ul li a{
-	  font-size: 20px;
-	}
-	nav ul li a:hover{
-	  background: none;
-	  color: #d61e3a;
-	}
-	#check:checked ~ ul{
-	  left: 0;
-	}
-   }
+}
 
 
+/* Mobile Nav */
+@media (max-width: 858px) {
 
+	nav {
+		background-color: #d61e3a;
+	}
 
-   #slider{
-	   
+	nav ul li button {
+		margin-right: 0px;
+		color: #fff;
+		background: #d53369;
+		/* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #cbad6d, #d53369);
+		/* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #cbad6d, #d53369);
+		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	.checkbtn {
+		display: block;
+	}
+
+	nav ul {
+		position: fixed;
+		border-top: solid 1px #d7d7d7;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		left: -100%;
+		text-align: center;
+		transition: all .3s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+
+	nav ul li a {
+		font-size: 20px;
+		color: #000;
+	}
+
+	nav ul li a:hover {
+		background: none;
+		color: #d61e3a;
+	}
+
+	#check:checked~ul {
+		left: 0;
+	}
+}
+
+.active {
+	background-color: #fff;
+	color: #000;
+
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+.activeLink{
+
+	background-color: #d61e3a;
+	color: #fff;
+
+	-webkit-transition: background-color 0.5s ease-out;
+	-moz-transition: background-color 0.5s ease-out;
+	-o-transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
+}
+
+.active a {
+	color: #000;
+}
+
+.active button {
+	color: #fff;
+	background: #d53369;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #cbad6d, #d53369);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #cbad6d, #d53369);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*********************
+******* Header *******
+*********************/
+
+#main {
+	min-height: 75vh;
+	margin: 0vw 0vw 0vw 0vw;
+	background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../img/slider1.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+}
+
+#main h1 {
+	text-align: center;
+	font-size: 7em;
+	color: #fff;
+	padding-top: 20vh;
+}
+
+/* index/home slider*/
+#slider {
 	min-height: 100vh;
-	background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../img/slider1.jpg');
-	   background-position: center center;
-	   background-size: cover;
-	   background-repeat: no-repeat;
-	   backface-visibility: hidden;
-	   animation: sliderAnimation 30s linear infinite 0s;
-	   animation-timing-function: ease-in-out;
-	   
-	   
-	   padding: 200px 0;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 15vw 0vw 0vw 0vw;
 
-   }
+	background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../img/slider1.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+
+	animation: bgfade 15s infinite;
+	animation-timing-function: ease-in-out;
+}
+
 /*
    @keyframes sliderAnimation{
 
@@ -265,35 +277,25 @@ background-image: linear-gradient(345deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)
 		background-image: url("../img/slider4.jpg");
 	}
 
-	
-
    }
 */
 
-#slider article{
-	
-	margin-top: 10vh;
-	
-	
-}
-
-   #slider article h1{
-	   font-size: 6em;
-	   color: #fff;
-	   text-align: center;
-	   padding-bottom: 75px;
-	
-   }
-
-   #slider article p{
-	font-size: 1.2em;
+#slider {
 	color: #fff;
 	text-align: center;
-	padding-bottom: 30px;
-  
 }
 
-#slider article button{
+#slider h1 {
+	font-size: 6em;
+	padding-bottom: 30px;
+}
+
+#slider p {
+	font-size: 1.2em;
+	padding-bottom: 30px;
+}
+
+#slider button {
 	display: block;
 	margin: 0 auto;
 	font-size: 1.2em;
@@ -302,45 +304,35 @@ background-image: linear-gradient(345deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%)
 	border-style: none;
 	border-radius: 30px;
 
-	
-
-	background-color: #FF3CAC;
-background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-
-
-	
-
-	color: #fff;
+	color: red;
 	text-align: center;
-  
 }
 
 
-#slider article button:hover {
-
-	background-color: #FF3CAC;
-background-image: linear-gradient(345deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-
-
-	
+#slider button:hover {
+	background: #d53369;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #cbad6d, #d53369);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #cbad6d, #d53369);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
-   /************************
+/************************
 *** Footer (sticky :/ ***
 ************************/
 footer {
 	display: block;
 	z-index: -1;
- }
+}
 
- footer img{
-	 width: 100px;
-	 height: 100px;
-	 margin: 0 auto;
- }
- 
- #footer {
+footer img {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#footer {
 	position: relative;
 	z-index: -1;
 	height: auto;
@@ -348,85 +340,43 @@ footer {
 	background: #1D2022;
 	color: #fff;
 	text-align: center;
- }
- 
- #footer i {
+}
+
+#footer i {
 	color: #fff;
 	font-size: 35px;
 	padding: 15px
- }
- 
- #footer i:hover {
+}
+
+#footer i:hover {
 	color: #d61e3a;
- }
- 
- @media (min-width: 767px) {
+}
+
+@media (min-width: 767px) {
 	html {
-	    position: relative;
-	    min-height: 100%;
+		position: relative;
+		min-height: 100%;
 	}
- 
+
 	#footer {
-	    /*position: absolute;*/
-	    bottom: 0;
-	    width: 100%;
-	    padding: 0;
-	    padding: 75px 0px 75px 0px;
+		/*position: absolute;*/
+		bottom: 0;
+		width: 100%;
+		padding: 0;
+		padding: 75px 0px 75px 0px;
 	}
- 
+
 	#footer p {
-	    margin: 0;
-	    line-height: 60px;
+		margin: 0;
+		line-height: 60px;
 	}
- }
- 
- @media (max-width: 767px) {
-	#footer p {
-	    line-height: 30px;
-	    text-align: center;
-	}
- }
- 
-
-
-
-
-
-
-.active{
-	background-color: #fff;
-	color: #000;
-
-	-webkit-transition: background-color 0.5s ease-out;
-  -moz-transition: background-color 0.5s ease-out;
-  -o-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-
 }
 
-.active a{
-	color: #000;
+@media (max-width: 767px) {
+	#footer p {
+		line-height: 30px;
+		text-align: center;
+	}
 }
 
-
-
-
-
-
-
-
- #main{
-	 min-height: 75vh;
-	 background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../img/slider1.jpg');
-	 background-position: center center;
-	 background-size: cover;
-	 background-repeat: no-repeat;
-	 backface-visibility: hidden;
- }
-
- #main h1{
-	 text-align: center;
-	 font-size: 7em;
-	 color: #fff;
-	 padding-top: 30vh;
- }
+button a {background-color: transparent;}

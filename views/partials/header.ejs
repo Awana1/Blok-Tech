@@ -17,6 +17,7 @@
 -->
 
 <nav>
+ 
     <input type="checkbox" id="check">
 
     <label for="check" class="checkbtn">
@@ -26,10 +27,12 @@
     <img id="logoHeader" src="../img/logo_header.png">
 
     <ul>
-      <li><button>Log in</button></li>
-      <li><a class="active" href="/index">Home</a></li>
-      <li><a href="/over">Over</a></li>
-      <li><a href="/diensten">Diensten</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><button onclick="location.href='login'" type="button">Log in</button></li>
+      <li><a href="/index" <% if (page_name === 'home') { %>class="activeLink" <% } %>>Home</a></li>
+      <li><a href="/over" <% if (page_name === 'over') { %>class="activeLink" <% } %>>Over</a></li>
+      <li><a href="/diensten" <% if (page_name === 'diensten') { %>class="activeLink" <% } %>>Diensten</a></li>
+      <li><a href="/contact" <% if (page_name === 'contact') { %>class="activeLink" <% } %>>Contact</a></li>
     </ul>
   </nav>
+
+  

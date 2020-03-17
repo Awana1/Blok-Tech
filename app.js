@@ -35,7 +35,7 @@ const app = express();
 ***********************************/
 
 // Database configuratie
-const db = require('./config/keys.ejs').MongoURI;
+const db = require('./static/config/keys.ejs').MongoURI;
 
 // connectie maken met Mongo
 // object toevoegen en op true aangeven.
@@ -143,8 +143,8 @@ app.get('/*', function(req, res){
  ***********************/
 
 // Routes
-app.use('/', require('./routes/index'));
-app.use('/users', require('./routes/users'));
+app.use('/', require('./static/routes/index'));
+app.use('/users', require('./static/routes/users'));
 
 //deploy port variable op poort 3000, wordt later opgeroepen met PORT variable
 const PORT = process.env.PORT || 3000;

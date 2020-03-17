@@ -247,6 +247,8 @@ nav ul li button:hover {
 	padding: 15vw 0vw 0vw 0vw;
 
 	background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('../img/slider1.jpg');
+
+
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -254,6 +256,23 @@ nav ul li button:hover {
 
 	animation: bgfade 15s infinite;
 	animation-timing-function: ease-in-out;
+}
+
+#bgLogin{
+	min-height: 100vh;
+	margin: 0vw 0vw 0vw 0vw;
+
+	
+	background: #DA4453;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
 }
 
 /*

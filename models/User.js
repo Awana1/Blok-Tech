@@ -1,5 +1,3 @@
-// user model 
-
 // mongoose inladen
 const mongoose = require('mongoose');
 

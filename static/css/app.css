@@ -41,7 +41,7 @@ img {
 	height: auto;
 }
 
-h2{
+h2 {
 	font-size: 3em;
 }
 
@@ -194,7 +194,7 @@ nav ul li button:hover {
 	transition: background-color 0.5s ease-out;
 }
 
-.activeLink{
+.activeLink {
 
 	background-color: #d61e3a;
 	color: #fff;
@@ -258,16 +258,17 @@ nav ul li button:hover {
 	animation-timing-function: ease-in-out;
 }
 
-#bgLogin{
+#bgLogin {
 	min-height: 100vh;
 	margin: 0vw 0vw 0vw 0vw;
 
-	
-	background: #DA4453;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+	background: #DA4453;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #89216B, #DA4453);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	background-position: center center;
 	background-size: cover;
@@ -275,29 +276,12 @@ background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, F
 	backface-visibility: hidden;
 }
 
-/*
-   @keyframes sliderAnimation{
-
-	0%, 100% {
-		background-image: url("../img/slider1.jpg");
-		animation: sliderAnimation 30s linear infinite 0s;
-		animation-timing-function: ease-in-out;
-	}
-
-	25% {
-		background-image: url("../img/slider2.jpg");
-	}
-
-	50% {
-		background-image: url("../img/slider3.jpg");
-	}
-
-	75% {
-		background-image: url("../img/slider4.jpg");
-	}
-
-   }
-*/
+#notFound{
+	text-align: center;
+	font-size: 7em;
+	color: #fff;
+	padding-top: 20vh;
+}
 
 #slider {
 	color: #fff;
@@ -398,4 +382,123 @@ footer img {
 	}
 }
 
-button a {background-color: transparent;}
+button a {
+	background-color: transparent;
+}
+
+
+
+
+.box-login {
+
+	display: block;
+
+	margin: auto;
+	margin-top: 10vh;
+	padding: 15px 15px 0px 15px;
+	background-color: #fff;
+	max-width: 500px;
+}
+
+.box-login img {
+	display: block;
+	max-width: 100px;
+	margin: auto;
+}
+
+.box-login h1 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.box-login form {
+	padding: 30px 15px 15px 15px;
+}
+
+.box-login input {
+	margin-bottom: 15px;
+}
+
+.box-login button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.box-login button {
+	background-color: #D84353;
+	/* Green */
+	border: none;
+	width: 100%;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.box-secondary {
+	padding: 15px;
+	text-align: center;
+}
+
+.box-secondary p {
+	padding-bottom: 15px;
+
+
+}
+
+.box-secondary button {
+	background-color: #89206A;
+}
+
+
+input[type=text],
+[type=name],
+[type=email],
+[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	font-size: 1rem;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.alert {
+
+	padding: 20px;
+	color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+	margin-top: 15px;
+}
+
+.alert-success {
+	padding: 20px;
+	color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+	margin-top: 15px;
+}
+
+/* The close button */
+.closebtn {
+	margin-left: 15px;
+	color: #000;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+	color: black;
+}

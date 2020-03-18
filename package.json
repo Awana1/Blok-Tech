@@ -4,13 +4,14 @@
   "description": "Dating app voor project tech",
   "main": "app.js",
   "scripts": {
-    "test": "lovr app",
+    "deploy": "gh-pages -d dist",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Awana1/dating-app-pt.git"
+    "url": "git+https://github.com/Awana1/dating-app-pt.git",
+    "homepage":"https://awana1.github.io/Blok-Tech"
   },
   "author": "Azam Awan",
   "license": "ISC",
@@ -30,6 +31,7 @@
     "express-session": "^1.17.0",
     "express-static": "^1.2.6",
     "flash": "^1.1.0",
+    "gh-pages": "^2.2.0",
     "mongoose": "^5.9.5",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",

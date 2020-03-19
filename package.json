@@ -31,8 +31,7 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "session": "^0.1.0",
-    "slug": "^2.1.1",
-    "deploy": "gh-pages -d views"
+    "slug": "^2.1.1"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",

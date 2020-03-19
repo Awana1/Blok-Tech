@@ -4,21 +4,21 @@
   "description": "Dating app voor project tech",
   "main": "app.js",
   "scripts": {
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d views",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Awana1/dating-app-pt.git",
+    "url": "git+https://github.com/Awana1/Blok-Tech.git",
     "homepage": "https://awana1.github.io/Blok-Tech"
   },
   "author": "Azam Awan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Awana1/dating-app-pt/issues"
+    "url": "https://github.com/Awana1/Blok-Tech/issues"
   },
-  "homepage": "https://github.com/Awana1/dating-app-pt#readme",
+  "homepage": "https://awana1.github.io/Blok-Tech",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.0",

@@ -2,18 +2,13 @@
 
 Voor blok tech moeten wij een dating webapplicatie maken waarin een gekozen jobstory wordt uitgewerkt. Ik heb bij deze de volgende jobstory bedacht:
 
-<dl>
-  <dt>Job Story</dt>
-  <dd>Wanneer ik iemand online wil leren kennen, dan wil ik op de dating app een profiel aanmaken en daarmee inloggen. Zodat ik gelijk kan beginnen met het aanvullen van mijn profiel
-  </dd>
-</dl>
+  ### Job Story
+  > Wanneer ik iemand online wil leren kennen, dan wil ik op de dating app een profiel aanmaken en daarmee inloggen. Zodat ik gelijk kan beginnen met het aanvullen van mijn profiel
 
 Om deze job story uit te werken, heb ik gekozen om de volgende functie te implementeren:
 
-<dl>
-  <dt>Gekozen Functie</dt>
-  <dd>Bezoekers/gebruikers laten registreren/aanmelden.</dd>
-</dl>
+  ### Gekozen Functie
+  > Bezoekers/gebruikers laten registreren/aanmelden.
 
 Hierbij wordt er gekeken naar formulieren en de validatie daarvan. Daarnaast wordt er ook gekeken naar de veiligheid van wachtwoorden en daarbij zal al het data opgeslagen worden in een cloud MongoDB server. 
 

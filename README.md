@@ -25,7 +25,9 @@ Wat ik elk week heb uitgevoerd is terug te vinden in mijn logboek. Deze logboek 
 ## Install Guide
 
 Stap 1 - Download de repository en unzip het bestand.
+
 Stap 2 - Open Terminal/Command Promt en ga naar het bestandslocatie 
+
 Stap 3 - Installeer de vereiste node-modules door de volgende code in te voeren
 
 ``` $ npm install ```

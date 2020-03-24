@@ -22,6 +22,21 @@ Wat ik elk week heb uitgevoerd is terug te vinden in mijn logboek. Deze logboek 
 
 [Link naar Lovr Github Wiki](https://github.com/Awana1/Blok-Tech/wiki)
 
+## Install Guide
+
+Stap 1 - Download de repository en unzip het bestand.
+Stap 2 - Open Terminal/Command Promt en ga naar het bestandslocatie 
+Stap 3 - Installeer de vereiste node-modules door de volgende code in te voeren
+
+``` $ npm install ```
+
+Stap 4 - Run nu het project
+
+``` $ node app.js ```
+
+De app draait nu op poort 3000. Om de app te openen kan je op je browser de volgende url invoeren
+
+``` http://localhost:3000 ```
 
 
 ## Bronvermelding

@@ -45,7 +45,9 @@ De app draait nu op poort 3000. Om de app te openen kan je op je browser de volg
 
 Hieronder komen mijn bronnen te waarvan ik ze ter inspiratie heb gebruikt voor mijn project.
 
-* [Bron 1](google.com)
-* [Bron 2](google.com)
-* [Bron 3](google.com)
-* [Bron 4](google.com)
+- Traversy Media. (2019). Node.js Crash Course [Videobestand]. Geraadpleegd van https://www.youtube.com/watch?v=fBNz5xF-Kx4
+- Traversy Media. (2018). Node.js With Passport Authentication | Full Project [Videobestand]. Geraadpleegd van https://www.youtube.com/watch?v=6FOq4cUdH8k&t=311s
+- NPM. (2019, 9 december). Npm: passport. Geraadpleegd van https://www.npmjs.com/package/passport
+- NPM. (2017, 7 februari). Npm: bcryptjs. Geraadpleegd van https://www.npmjs.com/package/bcryptjs
+Documentation. (z.d.). Geraadpleegd op 6 april 2020, van http://www.passportjs.org/docs/downloads/html/
+- https://github.com/cmda-bt/be-course-19-20

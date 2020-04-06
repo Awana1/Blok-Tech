@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <%- include ('./partials/head.ejs') %>
-</head>
+<%- include('partials/head'); -%>
 
 <body class="container">
 
-  <header>
-    <%- include ('./partials/header.ejs') %>
-  </header>
+  <%- include('partials/header'); -%>
 
   <main>
 
@@ -17,10 +10,10 @@
 
       <div class="box-login">
 
-        <img src="../static/img/logo.png">
+        <img src="../public/img/logo.png">
 
         <h1>Login</h1>
-        <%- include ('./partials/messages.ejs') -%>
+        <%- include('partials/messages'); -%>
 
         <form action="/users/login" method="POST">
 
@@ -33,7 +26,7 @@
 
         <div class="box-secondary">
           <p>Nog geen account?</p>
-          <button><a href="/registreren">Registreren</a></button>
+          <button><a href="/users/register">Registreren</a></button>
         </div>
 
       </div>

@@ -1,62 +1,90 @@
 const express = require('express');
-const router =  express.Router();
+const router = express.Router();
 const bcrypt = require('bcryptjs');
-
-// user model. Zo kunnen we methods op user roepen
-const User = require('../models/User');
-
 const passport = require('passport');
 
-//login pagina
-router.get('/login', (req, res) => res.render('login'));
+// User model inladen
+const User = require('../models/User');
 
-//registeren pagina
-router.get('/registreren', (req, res) => res.render('registreren'));
+const ObjectID = require('mongodb').ObjectID;
+
+const {
+  forwardAuthenticated
+} = require('../helpers/auth');
+
+/************
+ *****GET*****
+ ************/
+
+// Login Pagina
+router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
+
+// Registreren pagina
+router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+
+// Profiel wijzigen pagina
+router.get('/edit-profile', forwardAuthenticated, (req, res) => res.render('edit-profile'));
+
+
+/*************
+ *****POST*****
+ *************/
+
 
 // na het submitten van een formulier, wordt er een post request gemaakt naar /register
+router.post('/register', (req, res) => {
 
-// register handler
-router.post('/registreren', (req, res) => {
-  
-     // elk invoer in aparte variables neerzetten
-     const { name, email, password, password2 } = req.body;
-     let errors = [];
+  // elk invoer in aparte variables neerzetten
+  const {
+    name,
+    email,
+    password,
+    password2
+  } = req.body;
+  let errors = [];
 
-     //check verplichte velden
-     if(!name || !email || !password || !password2){
-          errors.push({msg: 'Vul aub alle velden in'});
-     }
+  if (!name || !email || !password || !password2) {
+    errors.push({
+      msg: 'Vul alle velden in'
+    });
+  }
 
-     // check of wachtwoorden overeen komen
-     if (password !== password2){
-          errors.push({msg: 'wachtwoorden komen niet overeen'});
-     }
+  //check verplichte velden
+  if (password != password2) {
+    errors.push({
+      msg: 'Wachtwoorden komen niet overeen'
+    });
+  }
 
-     //wachtwoord lengthe valideren
-     if(password.length < 7 ){
-          errors.push({msg: 'wachtwoord moet minimaal uit 7 karakters bestaan'});
-     }
+  // check wachtwoord lengthe
+  if (password.length < 5) {
+    errors.push({
+      msg: 'Wachtwoord moet uit 5 karakters bestaan'
+    });
+  }
 
-     // als er meer dan 0 foutmeldingen voorkomen uit de formulier.
-     if(errors.length > 0){
+  // als er meer dan 0 foutmeldingen voorkomen uit de formulier.
+  if (errors.length > 0) {
 
-          // register opnieuw renderen met variabelen. 
-          // we gebruiken variables omdat we er doorheen willen loopen en de msg's laten tonen.
-          // dit zorgt ervoor dat de formulier niet leeg is na het submitten en opnieuw renderen.
-          res.render('registreren', {
-               errors,
-               name,
-               email,
-               password,
-               password2
-          });
-
-     }else{
-          
-            User.findOne({ email: email }).then(user => {
+    // register opnieuw renderen met variabelen.
+    // we gebruiken variables omdat we er doorheen willen loopen en de msg's laten tonen.
+    // dit zorgt ervoor dat de formulier niet leeg is na het submitten en opnieuw renderen.
+    res.render('register', {
+      errors,
+      name,
+      email,
+      password,
+      password2
+    });
+  } else {
+    User.findOne({
+      email: email
+    }).then(user => {
       if (user) {
-        errors.push({ msg: 'Email al in gebruik' });
-        res.render('registreren', {
+        errors.push({
+          msg: 'Email al in gebruik'
+        });
+        res.render('register', {
           errors,
           name,
           email,
@@ -67,7 +95,7 @@ router.post('/registreren', (req, res) => {
         const newUser = new User({
           name,
           email,
-          password
+          password,
         });
 
         bcrypt.genSalt(10, (err, salt) => {
@@ -79,9 +107,9 @@ router.post('/registreren', (req, res) => {
               .then(user => {
                 req.flash(
                   'success_msg',
-                  'Je hebt je zojuist geregistreerd! je kan nu inloggen.'
+                  'Dank u wel voor het registreren. U kunt nu inloggen.'
                 );
-                res.redirect('/login');
+                res.redirect('/users/login');
               })
               .catch(err => console.log(err));
           });
@@ -92,22 +120,77 @@ router.post('/registreren', (req, res) => {
 });
 
 
-// login handler
+
+// Profiel wijzigen
+router.post('/edit-profile', (req, res) => {
+  const {
+    name,
+    age,
+    location,
+    hobbys,
+    bio,
+    school
+  } = req.body;
+  let errors = [];
+  const id = req.user.id;
+
+  if (!name || !age || !location || !hobbys || !bio || !school) {
+    errors.push({
+      msg: 'Vul alle velden in voor een complete profiel!'
+    });
+  }
+
+  if (errors.length > 0) {
+    res.render('edit-profile', {
+      errors,
+      name,
+      age,
+      location,
+      school,
+      hobbys,
+      bio
+    });
+  } else {
+
+    User.updateOne({
+      '_id': ObjectID(id)
+    }, {
+      $set: {
+        name,
+        age,
+        hobbys,
+        bio,
+        school
+      }
+    }, (err) => {
+      if (err) {
+        errors.push({
+          msg: 'Foutmelding tijdens het updaten'
+        });
+      }
+      req.flash(
+        'success_msg',
+        'Profielgegevens met success gewijzigd'
+      );
+      res.redirect('/dashboard');
+    });
+  }
+});
+
+// Login
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', {
     successRedirect: '/dashboard',
-    failureRedirect: '/login',
+    failureRedirect: '/users/login',
     failureFlash: true
   })(req, res, next);
 });
 
-// uitloggen dmv passport middleware kunnen we uitloggen.
+// Logout
 router.get('/logout', (req, res) => {
   req.logout();
-  // flash message dat gebruiker is uitgelogd
-  req.flash('success_msg', 'Je bent uitgelogd');
-  // gebruiker redirecten naar login pagina
-  res.redirect('/login');
+  req.flash('success_msg', 'You are logged out');
+  res.redirect('/users/login');
 });
 
 module.exports = router;

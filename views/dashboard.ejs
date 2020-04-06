@@ -2,32 +2,71 @@
 <html lang="en">
 
 <head>
-    <%- include ('partials/head.ejs') %>
+  <%- include('partials/head'); -%>
 </head>
 
 <body class="container">
 
     <header>
-        <%- include ('partials/header.ejs') %>
+      <%- include('partials/header'); -%>
     </header>
 
     <main>
 
         <section id="main">
-            <h1>dashboard</h1>
+            <h1>Mijn Lovr</h1>
         </section>
 
         <section>
-            <h1 class="mt-4">Dashboard</h1>
-            <h1>Welkom <%= user.name %></h1>
-            <a href="/logout" class="btn btn-secondary">Uitloggen</a>
+          <%- include('partials/messages'); -%>
+            <h2>Welkom <%= user.name %></h2>
+
+
+            <table id="dashboardTable">
+              <h3>Profielgegevens</h3>
+              <tr>
+                <th>Naam</th>
+                <td><%= user.name %></td>
+              </tr>
+              <tr>
+                <th>E-mail:</th>
+                <td><%= user.email %></td>
+              </tr>
+              <tr>
+                <th>Lid sinds: </th>
+                <td><%= user.date.toDateString() %></td>
+              </tr>
+              <tr>
+                <th>School: </th>
+                <td><%= user.school %></td>
+              </tr>
+              <tr>
+              <tr>
+                  <th>Woonplaats: </th>
+                  <td><%= user.location %></td>
+              </tr>
+                <tr>
+                <th>Hobbys: </th>
+                <td><%= user.hobbys %></td>
+              </tr>
+              <tr>
+                <th>Bio: </th>
+                <td><%= user.bio %></td>
+              </tr>
+            </table>
+
+
+
+            <a href="/users/logout" class="btn">Uitloggen</a>
+            <a href="/edit-profile" class="btn">Wijzig profiel</a>
+
 
         </section>
 
     </main>
 
     <footer>
-        <%- include ('partials/footer.ejs') %>
+      <%- include('partials/footer'); -%>
     </footer>
 
 </body>

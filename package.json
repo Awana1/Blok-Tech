@@ -1,40 +1,32 @@
 {
-  "name": "Lovr",
+  "name": "project-tech-team",
   "version": "1.0.0",
-  "description": "Dating app voor project tech",
+  "private": true,
   "main": "app.js",
   "scripts": {
-    "deploy": "gh-pages -d views",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Awana1/Blok-Tech.git",
-    "homepage": "https://awana1.github.io/Blok-Tech"
-  },
-  "author": "Azam Awan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Awana1/Blok-Tech/issues"
-  },
-  "homepage": "https://awana1.github.io/Blok-Tech",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "config": "^3.3.0",
+    "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.7-alpha.1",
     "express-session": "^1.17.0",
-    "flash": "^1.1.0",
-    "mongoose": "^5.9.5",
+    "http-errors": "^1.6.3",
+    "install": "^0.13.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.6",
+    "multer": "^1.4.2",
+    "npm": "^6.14.4",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "session": "^0.1.0",
-    "slug": "^2.1.1"
+    "session": "^0.1.0"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
     "nodemon": "^2.0.2"
   }
 }

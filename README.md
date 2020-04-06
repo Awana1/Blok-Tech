@@ -1,34 +1,63 @@
-# Lovr - Where Lovebirds Meet
+# project-tech-team
+Project Tech: Team - Jordy Sahit, Chun Xiao, Azam Awan
 
-Voor blok tech moeten wij een dating webapplicatie maken waarin een gekozen jobstory wordt uitgewerkt. Ik heb bij deze de volgende jobstory bedacht:
+## Lovr - Where Lovebirds Meet
 
-  ### Job Story
-  > Wanneer ik iemand online wil leren kennen, dan wil ik op de dating app een profiel aanmaken en daarmee inloggen. Zodat ik gelijk kan beginnen met het aanvullen van mijn profiel
+This is our project for Assignment 2 for project tech within the CMD course.
 
-Om deze job story uit te werken, heb ik gekozen om de volgende functie te implementeren:
+The requirement within Assignment 2 is to create a dating web application in which three job story's are elaborated. We came up with the following job story's:
 
-  ### Gekozen Functie
-  > Bezoekers/gebruikers laten registreren/aanmelden.
+Azam Awan
+> When I want to get to know someone online, I want to create a profile on the dating app and log in with it. So that I can comfortably create my user profile.
 
-Hierbij wordt er gekeken naar formulieren en de validatie daarvan. Daarnaast wordt er ook gekeken naar de veiligheid van wachtwoorden en daarbij zal al het data opgeslagen worden in een cloud MongoDB server. 
+Chun Xiao
+> As a user of the dating site, I want to be able to tell other's my interests, so other users can get to know me better and result in better matches.
 
-## Preview Lovr Dating app
+Jordy Sahit
+> As a user I would like to be able to tell something about myself so that more people can get to know me.
 
-De webapplicatie beschikt van een responsieve layout. Hierbij heb ik mezelf aan de regels gehouden om geen gebruik te maken van een HTML framework, maar heb ik diverse media-queries toegepast met verschillende break-points.
+# Requirements list
+We have divided our job storys into small functionalities. These functionalities will be presented in a list view below:
 
-## Progressie
+- Responsive
+The webapp is fully responsive and accessable with all devices.
 
-Wat ik elk week heb uitgevoerd is terug te vinden in mijn logboek. Deze logboek is terug te vinden in de wiki van deze repository.
+- Register/Log in
+The user can create an account. The user can then log in with this account with the given email and password
 
-[Link naar Lovr Github Wiki](https://github.com/Awana1/Blok-Tech/wiki)
+- MongoDB Cloud Database
+The user credentials will be stored in a cluster on MongoDB.Atlas .
+
+- Encryption
+The user login password will be encrypted in the database for security reasons.
 
 
 
-## Bronvermelding
 
-Hieronder komen mijn bronnen te waarvan ik ze ter inspiratie heb gebruikt voor mijn project.
+I have divided my job story into small functionalities. These functionalities will be presented in a list view.
 
-* [Bron 1](google.com)
-* [Bron 2](google.com)
-* [Bron 3](google.com)
-* [Bron 4](google.com)
+User is shown a responsive web page
+User can Login / Register (safe)
+There are various NPM packages that would help me to work out my job story. I did preliminary research and placed the chosen NPM packages in a MoSCoW table.
+
+# How to install
+
+1. Open a terminal
+
+2. Clone this repo
+```
+git clone https://github.com/sahitj001/project-tech-team
+```
+
+3. Install node modules
+```
+npm Install
+```
+
+4. Run the application
+```
+npm start
+```
+
+#License
+[MIT](https://github.com/sahitj001/project-tech-team/blob/master/LICENSE)

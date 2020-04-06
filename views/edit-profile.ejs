@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('partials/head'); -%>
+</head>
+
+<body class="container">
+
+  <header>
+    <%- include('partials/header'); -%>
+  </header>
+
+  <main>
+
+    <section id="main">
+      <h1>Edit Profile</h1>
+    </section>
+
+    <section>
+
+      <%- include('partials/messages'); -%>
+
+      <form action="/users/edit-profile" method="POST">
+
+        <h3>Voer profielgegevens in</h3>
+
+        <input type="name" id="name" name="name" class="form-control" placeholder="Naam" />
+        <input type="number" id="age" name="age" class="form-control" placeholder="Leeftijd" />
+        <input type="text" id="location" name="location" class="form-control" placeholder="Woonplaats" />
+        <select id="school" name="school">
+          <option value="" disabled selected>Selecteer School</option>
+          <option value="Hogeschool van Amsterdam (HvA)">Hogeschool van Amsterdam (HvA)</option>
+          <option value="Hogeschool Utrecht (HU)">Hogeschool Utrecht (HU)</option>
+          <option value="Hogeschool Rotterdam (HR)">Hogeschool Rotterdam (HR)</option>
+        </select>
+        <input type="text" id="hobbys" name="hobbys" class="form-control" placeholder="Hobbys" />
+
+        <textarea id="subject" id="bio" name="bio" class="form-control" placeholder="Bio"
+          style="height:200px"></textarea>
+        <br>
+
+        <button type="submit" class="btn">Edit profile</button>
+
+      </form>
+      <a href="/dashboard" class="btn">Terug</a>
+
+
+    </section>
+
+  </main>
+
+  <footer>
+    <%- include('partials/footer'); -%>
+  </footer>
+
+</body>
+
+</html>

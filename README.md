@@ -36,19 +36,19 @@ Er zijn verschillende NPM-pakketten die mij kunnen helpen om mijn werkverhaal ui
 1. Open terminal
 
 2. Clone de volgende repository
-''
+```
 git clone https://github.com/Awana1/Blok-Tech.git
-''
+```
 
 3. Installeer knooppuntmodules
-''
+```
 npm install
-''
+```
 
 4. Voer de applicatie uit
-''
+```
 npm app.js
-''
+```
 
 #License
 [MIT](https://github.com/sahitj001/project-tech-team/blob/master/LICENSE)

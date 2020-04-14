@@ -261,6 +261,7 @@ nav ul li button:hover {
 #main h1 {
 	text-align: center;
 	font-size: 7em;
+
 	color: #fff;
 	padding-top: 0vh;
 }
@@ -316,6 +317,8 @@ nav ul li button:hover {
 #slider h1 {
 	font-size: 6em;
 	padding-bottom: 30px;
+	padding-top: 5vh;
+
 }
 
 #slider p {

@@ -46,7 +46,6 @@ Het volledige product moet een uur van tevoren worden ingediend binnen vastgeste
 
 Een projectlid moet er alles aan doen om zijn deel van een teamopdracht de dag voor de deadline in te leveren.
 
-
 # Documentatie
 Elke vorm van documentatie moet worden ingediend als een '.md'-bestand.
 

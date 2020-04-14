@@ -27,7 +27,7 @@ Het inlogwachtwoord van de gebruiker wordt om veiligheidsredenen in de database 
 
 Ik heb mijn jobverhaal opgedeeld in kleine functionaliteiten. Deze functionaliteiten worden gepresenteerd in een lijstweergave.
 
-De gebruiker krijgt een responsieve webpagina te zien
+De gebruiker krijgt een responsive webpagina te zien
 Gebruiker kan inloggen / registreren (veilig)
 Er zijn verschillende NPM-pakketten die mij kunnen helpen om mijn werkverhaal uit te werken. Ik deed vooronderzoek en plaatste de gekozen NPM-pakketten in een MoSCoW-tabel.
 

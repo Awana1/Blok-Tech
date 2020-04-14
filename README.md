@@ -51,4 +51,4 @@ npm app.js
 ```
 
 #License
-[MIT](https://github.com/sahitj001/project-tech-team/blob/master/LICENSE)
+[MIT](https://github.com/Awana1/Blok-Tech/blob/master/LICENSE)

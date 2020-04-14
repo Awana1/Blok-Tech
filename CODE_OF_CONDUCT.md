@@ -1,63 +1,61 @@
 # Code Of Conduct
-Within this document, agreements are made within the project group, these agreements concern more important matters such as not being present, arriving late, having to leave earlier, not meeting deadlines, other matters that we deem necessary. The contact details of the project members are also noted in this document. The agreements are also made about how the documents should be seen, what the naming should be and with which programs are executed.
+Binnen dit document worden afspraken gemaakt binnen de projectgroep, deze afspraken betreffen belangrijkere zaken als niet aanwezig zijn, te laat komen, eerder moeten vertrekken, deadlines niet halen, andere zaken die wij nodig achten. De contactgegevens van de projectleden worden ook vermeld in dit document. Ook worden afspraken gemaakt over hoe de documenten moeten worden gezien, wat de naamgeving moet zijn en met welke programma's worden uitgevoerd.
 
-# Our Standards
-Examples of behaviour that contributes to creating a positive environment include:
+# Standaarden
+Voorbeelden van gedrag dat bijdraagt ​​aan het creëren van een positieve omgeving zijn onder meer:
 
-- Using welcoming and inclusive language
-- Being respectful of differing viewpoints and experiences
-- Gracefully accepting constructive criticism
-- Focusing on what is best for the community
-- Showing empathy towards other community members
-- Examples of unacceptable behaviour by participants include:
+- Het gebruik van gastvrije en inclusieve taal
+- Respect hebben voor verschillende standpunten en ervaringen
+- Het accepteren van constructieve kritiek
+- Focus op wat het beste is voor de gemeenschap
+- Empathie tonen tegenover andere leden van de gemeenschap
+- Voorbeelden van onaanvaardbaar gedrag door deelnemers zijn onder meer:
 
-The use of sexualised language or imagery and unwelcome sexual attention or advances
-- Trolling, insulting/derogatory comments, and personal or political attacks
-- Public or private harassment
-- Publishing others’ private information, such as a physical or electronic address, without explicit permission
-- Other conduct which could reasonably be considered inappropriate in a professional setting
+Het gebruik van geseksualiseerde taal of afbeeldingen en ongewenste seksuele aandacht of vooruitgang
+- Trolling, beledigende / denigrerende opmerkingen en persoonlijke of politieke aanvallen
+- Openbare of particuliere intimidatie
+- Publiceren van privégegevens van anderen, zoals een fysiek of elektronisch adres, zonder expliciete toestemming
+- Ander gedrag dat redelijkerwijs als ongepast kan worden beschouwd in een professionele setting
 
 # Tools
-The following tools will be used to communicate:
+De volgende tools worden gebruikt om te communiceren:
 
 ## Whatsapp
-As a project group, we will inform each other about the continuation of our checklist. We will also be discussing assingnments and possibly report something in the group via WhatsApp.
+Als projectgroep informeren we elkaar over de voortzetting van onze checklist. Ook bespreken we de afspraken en melden eventueel via WhatsApp iets in de groep.
 
 ## Discord
-We will make the use of Discord to openly communicate with each other via the call function. Further links to external and internal resources will be shared with each other in the chatroom if neccesary.
+We zullen gebruik maken van Discord om openlijk met elkaar te communiceren via de oproepfunctie. Verdere links naar externe en interne bronnen worden indien nodig met elkaar gedeeld in de chatroom.
 
 ## Githhub Projects
-Assignments and to do lists will be marked in the Github Projects tab. Each 'to do' tab will be marked completed if the standards are met with the requirement.
+Toewijzingen en takenlijsten worden gemarkeerd op het tabblad Github-projecten. Elk 'te doen'-tabblad wordt gemarkeerd als voltooid als aan de eisen is voldaan.
 
-# Appointments
-When the project group is scheduled, the project members should be present unless otherwise agreed the day before.
+# Afspraken
+Bij de planning van de projectgroep dienen de projectleden aanwezig te zijn, tenzij de dag ervoor anders is overeengekomen.
 
-If one of the project members is unable to be on time, the project member will report this as soon as he is aware of this, in the group chat (WhatsApp).
+Indien een van de projectleden niet op tijd kan zijn, zal het projectlid dit melden zodra hij hiervan op de hoogte is, in de groepschat (WhatsApp).
 
-If a project member does not have the opportunity to be present, the project member must report this 48 hours in advance.
+Indien een projectlid niet in de gelegenheid is aanwezig te zijn, dient het projectlid dit 48 uur van tevoren te melden.
 
-If a project member is unable to attend the full duration of the work session, he must indicate this on the day of the appointment.
+Indien een projectlid de volledige duur van de werksessie niet kan bijwonen, dient hij dit op de dag van de afspraak aan te geven.
 
-# Special circumstances
-In case of special circumstances, as a result of which a project member is unable to be present, the project member reports this as soon as he is aware of this, in the group chat (WhatsApp).
+# Speciale omstandigheden
+In geval van bijzondere omstandigheden, waardoor een projectlid niet aanwezig kan zijn, meldt het projectlid dit, zodra hij hiervan op de hoogte is, in de groepschat (WhatsApp).
 
 # Deadlines
-The full product must be submitted one hour in advance at set deadlines.
+Het volledige product moet een uur van tevoren worden ingediend binnen vastgestelde termijnen.
 
-A project member must make every effort at all times to have submitted his part of a team assignment the day before the deadline.
+Een projectlid moet er alles aan doen om zijn deel van een teamopdracht de dag voor de deadline in te leveren.
 
+# Documentatie
+Elke vorm van documentatie moet worden ingediend als een '.md'-bestand.
 
-# Documentation
-Any form of documentation needs to be submitted as a '.md' file. 
-
-When the documents are made, the maker should note down the Apa references.
+Wanneer de documenten zijn gemaakt, moet de maker de Apa-referenties noteren.
 
 # Contact
-contact information of the participants within this project:
+contactgegevens van de deelnemers binnen dit project:
 
-|Name|Email|
-|---|---|
-|Azam Awan|azam.awan@hva.nl|
-|Chun Xiao|chun.xiao@hva.nl|
-|Jordy Sahit|jordy.sahit@hva.nl|
-
+| Naam | E-mail |
+| --- | --- |
+| Azam Awan | azam.awan@hva.nl |
+| Chun Xiao | chun.xiao@hva.nl |
+| Jordy Sahit | jordy.sahit@hva.nl |

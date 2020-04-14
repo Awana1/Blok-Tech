@@ -1,55 +1,54 @@
 # project-tech-team
-Project Tech: Team - Jordy Sahit, Chun Xiao, Azam Awan
+Project Tech: Team - Azam Awan
 
 ## Lovr - Where Lovebirds Meet
 
-This is my project for Assignment 2 for project tech within the CMD course.
+Dit is mijn project voor Assignment 2 voor projecttechnologie binnen de CMD-cursus.
 
-The requirement within Assignment 2 is to create a dating web application in which three job story's are elaborated. I came up with the following job story's:
+De eis binnen Assignment 2 is om een ​​datingwebapplicatie te maken waarin drie jobverhalen worden uitgewerkt. Ik kwam zelf met de volgende jobstory:
 
 Azam Awan
-> When I want to get to know someone online, I want to create a profile on the dating app and log in with it. So that I can comfortably create my user profile.
+> Wanneer ik iemand online wil leren kennen, wil ik een profiel aanmaken op de dating-app en daarmee inloggen. Zodat ik gemakkelijk later mijn gebruikersprofiel kan aanmaken.
 
 # Requirements list
-We have divided our job storys into small functionalities. These functionalities will be presented in a list view below:
+Ik heb mijn jobstory onderverdeeld in kleine functionaliteiten. Deze functionaliteiten worden hieronder in een lijstweergave weergegeven:
 
-- Responsive
-The webapp is fully responsive and accessable with all devices.
+- Responsive<br>
+De webapp is volledig responsief en toegankelijk met alle apparaten.
 
-- Register/Log in
-The user can create an account. The user can then log in with this account with the given email and password
+- Registreren / Inloggen<br>
+De gebruiker kan een account aanmaken. De gebruiker kan dan inloggen met dit account met het opgegeven e-mailadres en wachtwoord
 
-- MongoDB Cloud Database
-The user credentials will be stored in a cluster on MongoDB.Atlas .
+- MongoDB Cloud Database<br>
+De gebruikersgegevens worden opgeslagen in een cluster op MongoDB.Atlas.
 
-- Encryption
-The user login password will be encrypted in the database for security reasons.
+- Encryptie<br>
+Het inlogwachtwoord van de gebruiker wordt om veiligheidsredenen in de database versleuteld.
 
+Ik heb mijn jobverhaal opgedeeld in kleine functionaliteiten. Deze functionaliteiten worden gepresenteerd in een lijstweergave.
 
-I have divided my job story into small functionalities. These functionalities will be presented in a list view.
+De gebruiker krijgt een responsive webpagina te zien
+Gebruiker kan inloggen / registreren (veilig)
+Er zijn verschillende NPM-pakketten die mij kunnen helpen om mijn werkverhaal uit te werken. Ik deed vooronderzoek en plaatste de gekozen NPM-pakketten in een MoSCoW-tabel.
 
-User is shown a responsive web page
-User can Login / Register (safe)
-There are various NPM packages that would help me to work out my job story. I did preliminary research and placed the chosen NPM packages in a MoSCoW table.
+# App installeren/runnen
 
-# How to install
+1. Open terminal
 
-1. Open a terminal
-
-2. Clone this repo
+2. Clone de volgende repository
 ```
-git clone https://github.com/sahitj001/project-tech-team
-```
-
-3. Install node modules
-```
-npm Install
+git clone https://github.com/Awana1/Blok-Tech.git
 ```
 
-4. Run the application
+3. Installeer knooppuntmodules
 ```
-npm start
+npm install
+```
+
+4. Voer de applicatie uit
+```
+npm app.js
 ```
 
 #License
-[MIT](https://github.com/sahitj001/project-tech-team/blob/master/LICENSE)
+[MIT](https://github.com/Awana1/Blok-Tech/blob/master/LICENSE)

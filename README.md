@@ -45,7 +45,9 @@ git clone https://github.com/Awana1/Blok-Tech.git
 npm install
 ```
 
-4. Voer de applicatie uit
+4. Neem contact op met mij en vraag voor de '.env' file. Met deze file zal de applicatie alle database gegevens inladen.
+
+5. Voer de applicatie uit
 ```
 npm app.js
 ```

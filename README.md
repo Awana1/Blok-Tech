@@ -52,5 +52,8 @@ npm install
 npm app.js
 ```
 
+Live versie van de app<br>
+https://lovr-bt.herokuapp.com/
+
 #License
 [MIT](https://github.com/Awana1/Blok-Tech/blob/master/LICENSE)

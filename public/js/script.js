@@ -77,14 +77,14 @@ $(function() {
         if($(window).scrollTop() > 50) {
             $("nav").addClass("active");
             
-            document.getElementById("logoHeader").src = "/static/img/logo_header2.png";
+            document.getElementById("logoHeader").src = "/public/img/logo_header2.png";
             document.getElementsByTagName("nav")[0].style.borderBottom = "solid 1px #d7d7d7";
             document.getElementsByClassName('checkbtn')[0].style.color = '#000';
             
         } else {
             //remove the background property so it comes transparent again (defined in your css)
            $("nav").removeClass("active");
-           document.getElementById("logoHeader").src = "/static/img/logo_header.png";
+           document.getElementById("logoHeader").src = "/public/img/logo_header.png";
            document.getElementsByTagName("nav")[0].style.borderBottom = "none";
            document.getElementsByClassName('checkbtn')[0].style.color = '#fff';
 

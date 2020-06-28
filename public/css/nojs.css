@@ -1,0 +1,12 @@
+#first, #second, #third   {
+     display: block;
+     box-shadow: none;
+     border-style: none;
+}
+
+.btn-next, .btn-prev, #progressbar{
+     display: none;
+}
+
+
+

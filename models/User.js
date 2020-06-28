@@ -14,7 +14,8 @@ const UserSchema = new schema({
   hobbys: String,
   location: String,
   bio: String,
-  school: String
+  school: String,
+  opleiding: String
 })
 
 

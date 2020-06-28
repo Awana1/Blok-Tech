@@ -45,10 +45,10 @@ h2 {
 	font-size: 3em;
 }
 
-.btn{
+.btn {
 	background-color: #D84353;
 	border: none;
-width: 200px;
+	width: 200px;
 	color: white;
 	padding: 15px 32px;
 	text-align: center;
@@ -61,15 +61,37 @@ width: 200px;
 
 }
 
-#dashboardTable{
+.btn-next {
+	background-color: #2b2d42;
+	float: right;
+}
+
+.btn-prev {
+	background-color: #8d99ae;
+	float: left;
+}
+
+.btn-submit {
+	float: right;
+}
+
+#dashboardTable {
 	padding: 30px 0px 30px 0px;
 }
 
 
 
-tr{text-align: left;}
-th{color: #d84353;}
-td{padding: 10px 10px 10px 50px}
+tr {
+	text-align: left;
+}
+
+th {
+	color: #d84353;
+}
+
+td {
+	padding: 10px 10px 10px 50px
+}
 
 /********************
 **** Navigation ****
@@ -78,12 +100,7 @@ td{padding: 10px 10px 10px 50px}
 nav {
 	width: 100%;
 	position: fixed;
-	background: transparent;
-
-	-webkit-transition: background-color 0.5s ease-out;
-	-moz-transition: background-color 0.5s ease-out;
-	-o-transition: background-color 0.5s ease-out;
-	transition: background-color 0.5s ease-out;
+	background-color: #d61e3a;;
 }
 
 nav img {
@@ -138,6 +155,7 @@ nav ul li button:hover {
 	background: linear-gradient(to right, #cbad6d, #d53369);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 
 .checkbtn {
 	font-size: 30px;
@@ -209,26 +227,10 @@ nav ul li button:hover {
 	}
 }
 
-.active {
-	background-color: #fff;
-	color: #000;
 
-	-webkit-transition: background-color 0.5s ease-out;
-	-moz-transition: background-color 0.5s ease-out;
-	-o-transition: background-color 0.5s ease-out;
-	transition: background-color 0.5s ease-out;
 }
 
-.activeLink {
 
-	background-color: #d61e3a;
-	color: #fff;
-
-	-webkit-transition: background-color 0.5s ease-out;
-	-moz-transition: background-color 0.5s ease-out;
-	-o-transition: background-color 0.5s ease-out;
-	transition: background-color 0.5s ease-out;
-}
 
 .active a {
 	color: #000;
@@ -302,7 +304,7 @@ nav ul li button:hover {
 	backface-visibility: hidden;
 }
 
-#notFound{
+#notFound {
 	text-align: center;
 	font-size: 7em;
 	color: #fff;
@@ -415,8 +417,6 @@ button a {
 }
 
 
-
-
 .box-login {
 
 	display: block;
@@ -487,7 +487,7 @@ input[type=text],
 [type=name],
 [type=email],
 [type=number],
-[type=password]{
+[type=password] {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -498,7 +498,8 @@ input[type=text],
 	box-sizing: border-box;
 }
 
-textarea{width: 100%;
+textarea {
+	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	font-size: 1rem;
@@ -514,7 +515,7 @@ select {
 	-moz-appearance: none;
 
 	padding: 12px 20px;
-padding-right: 100px;
+	padding-right: 100px;
 	margin: 8px 0;
 
 	font-size: 1rem;
@@ -532,16 +533,16 @@ padding-right: 100px;
 
 	padding: 20px;
 	color: #856404;
-    background-color: #fff3cd;
-    border-color: #ffeeba;
+	background-color: #fff3cd;
+	border-color: #ffeeba;
 	margin-top: 15px;
 }
 
 .alert-success {
 	padding: 20px;
 	color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
 	margin-top: 15px;
 }
 
@@ -560,4 +561,49 @@ padding-right: 100px;
 /* When moving the mouse over the close button */
 .closebtn:hover {
 	color: black;
+}
+
+
+
+.navbar-default {
+	transition: 500ms ease;
+	background: #d61e3a;
+}
+
+.navbar-default.scrolled {
+	background: #000;
+}
+
+fieldset {
+	display: none;
+	margin: auto;
+	max-width: 750px;
+	padding: 30px;
+	box-shadow: 3px 3px 25px 1px gray
+}
+
+#first {
+	display: block;
+
+	box-shadow: 3px 3px 25px 1px gray
+}
+
+#progressbar {
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: bold;
+	padding-bottom: 60px;
+
+}
+
+#progressbar li {
+
+
+	display: inline-flex;
+	color: #c1c5cc;
+
+}
+
+#progressbar #labelFirst {
+	color: red
 }

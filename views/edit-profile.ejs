@@ -23,27 +23,62 @@
 
       <form action="/users/edit-profile" method="POST">
 
-        <h3>Voer profielgegevens in</h3>
+                <ul id="progressbar">
+                  <li id="labelFirst">Persoonsgegevens</li> -
+                  <li id="labelSecond">Opleiding</li> -
+                  <li id="labelThird">Overig</li>
+                </ul>
 
-        <input type="name" id="name" name="name" class="form-control" placeholder="Naam" />
-        <input type="number" id="age" name="age" class="form-control" placeholder="Leeftijd" />
-        <input type="text" id="location" name="location" class="form-control" placeholder="Woonplaats" />
-        <select id="school" name="school">
-          <option value="" disabled selected>Selecteer School</option>
-          <option value="Hogeschool van Amsterdam (HvA)">Hogeschool van Amsterdam (HvA)</option>
-          <option value="Hogeschool Utrecht (HU)">Hogeschool Utrecht (HU)</option>
-          <option value="Hogeschool Rotterdam (HR)">Hogeschool Rotterdam (HR)</option>
-        </select>
-        <input type="text" id="hobbys" name="hobbys" class="form-control" placeholder="Hobbys" />
 
-        <textarea id="subject" id="bio" name="bio" class="form-control" placeholder="Bio"
-          style="height:200px"></textarea>
-        <br>
+          <fieldset id="first">
+     
+                <h4>Persoonsgegevens</h4>
 
-        <button type="submit" class="btn">Edit profile</button>
+                    <input type="name" id="name" name="name" class="form-control" placeholder="Naam" />
+                    <input type="number" id="age" name="age" class="form-control" placeholder="Leeftijd" />
+                    <input type="text" id="location" name="location" class="form-control" placeholder="Woonplaats" />
+
+                    <input class="btn btn-next" id="next_btn1" onclick="next_step1()" type="button" value="Next">
+                    
+          </fieldset>
+
+        <fieldset id="second">
+
+                    <h4>Opleiding</h4>
+
+                    <select id="school" name="school">
+                          <option value="" disabled selected>Selecteer School</option>
+                          <option value="Hogeschool van Amsterdam (HvA)">Hogeschool van Amsterdam (HvA)</option>
+                          <option value="Hogeschool Utrecht (HU)">Hogeschool Utrecht (HU)</option>
+                          <option value="Hogeschool Rotterdam (HR)">Hogeschool Rotterdam (HR)</option>
+                    </select>
+
+                    <select id="opleiding" name="opleiding">
+                          <option value="" disabled selected>Selecteer Opleiding</option>
+                          <option value="Communication & Multimedia Design">Communication & Multimedia Design</option>
+                          <option value="Business IT & Management">Business IT & Management</option>
+                          <option value="Software Engineering">Software Engineering</option>
+                    </select>
+
+                    <input class="btn btn-prev" id="pre_btn1" onclick="prev_step1()" type="button" value="Previous">
+                    <input class="btn btn-next" id="next_btn2" onclick="next_step2()" type="button" value="Next">
+        </fieldset>
+
+        <fieldset id="third">
+                    <h4>Overig</h4>
+                          <input type="text" id="hobbys" name="hobbys" class="form-control" placeholder="Hobbys" />
+
+                          <textarea id="subject" id="bio" name="bio" class="form-control" placeholder="Bio"
+                            style="height:200px"></textarea>
+
+                        <br>
+
+                          <input class="btn btn-prev" id="pre_btn2" onclick="prev_step2()" type="button" value="Previous">
+                          
+                          <button type="submit" class="btn btn-submit">Edit profile</button>
+        </fieldset>
 
       </form>
-      <a href="/dashboard" class="btn">Terug</a>
 
 
     </section>

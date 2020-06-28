@@ -129,12 +129,13 @@ router.post('/edit-profile', (req, res) => {
     location,
     hobbys,
     bio,
-    school
+    school,
+    opleiding
   } = req.body;
   let errors = [];
   const id = req.user.id;
 
-  if (!name || !age || !location || !hobbys || !bio || !school) {
+  if (!name || !age || !location || !hobbys || !bio || !school || !opleiding) {
     errors.push({
       msg: 'Vul alle velden in voor een complete profiel!'
     });
@@ -148,7 +149,8 @@ router.post('/edit-profile', (req, res) => {
       location,
       school,
       hobbys,
-      bio
+      bio,
+      opleiding
     });
   } else {
 
@@ -159,8 +161,10 @@ router.post('/edit-profile', (req, res) => {
         name,
         age,
         hobbys,
+        location,
         bio,
-        school
+        school,
+        opleiding
       }
     }, (err) => {
       if (err) {
